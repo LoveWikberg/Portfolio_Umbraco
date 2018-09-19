@@ -19,5 +19,6 @@ namespace Portfolio_Umbraco_Site.Code.Models
         public string Beeees { get; set; }
         public string Laaaang { get; set; }
         public string Jalla { get; set; }
+        public string ParalaxImageUrl { get; set; }
     }
 }

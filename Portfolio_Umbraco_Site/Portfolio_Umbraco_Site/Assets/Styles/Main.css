@@ -1,0 +1,48 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    padding-top: 45vh;
+    /*background-image: url('../../Media/kenrick-mills-728501-unsplash.jpg');*/
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.botdiv {
+    position: relative;
+    background-color: rgb(219, 214, 214);
+    height: 100vh;
+}
+
+.imgcontainer {
+    background-color: blue;
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+    position: absolute;
+    top: -20vh;
+    left: 50%;
+    transition: 1s;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.imgcontainer img{
+    height:100%;
+    border-radius:50%;
+}
+
+    .imgcontainer:hover {
+        transform: translateX(-50%) scale(1.3);
+        -ms-transform: translateX(-50%) scale(1.3);
+        -webkit-transform: translateX(-50%) scale(1.3);
+    }

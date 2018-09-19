@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d616cd076308c7cc")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "bf97680dc122d7ca")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -63,6 +63,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Home, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// ProfileImage
+		///</summary>
+		[ImplementPropertyType("profileImage")]
+		public IPublishedContent ProfileImage
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("profileImage"); }
 		}
 
 		///<summary>
